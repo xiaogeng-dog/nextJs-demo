@@ -34,6 +34,9 @@ const Home = function Home() {
           <Button type="primary" block href="/stylePage">
             这是一个CSS样式示例跳转按钮
           </Button>
+          <Button type="primary" block href="/link">
+            这是一个Link示例跳转按钮
+          </Button>
         </Space>
       </section>
     </>

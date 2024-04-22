@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "@/assets/font/iconfont.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { NavigationEvents } from "./components/navigation-events";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AntdRegistry>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          {children}
+          <Suspense fallback={null}>
+            <NavigationEvents />
+          </Suspense>
+        </body>
       </AntdRegistry>
     </html>
   );
