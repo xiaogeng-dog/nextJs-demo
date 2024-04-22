@@ -1,7 +1,7 @@
 import { Button, Space, Divider } from "antd";
 import Image from "next/image";
 
-const Home = function Home() {
+const Page = function Page() {
   return (
     <>
       <section
@@ -43,4 +43,4 @@ const Home = function Home() {
   );
 };
 
-export default Home;
+export default Page;

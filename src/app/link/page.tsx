@@ -70,7 +70,7 @@ const More: FC<IProps> = memo((props) => {
 
         <h2>动态路由</h2>
         {/* 一级动态路由 */}
-        <Link href="/detail01/666" replace>
+        <Link href="/detail01/666">
           <Button type="primary">detail01/666</Button>
         </Link>
 
