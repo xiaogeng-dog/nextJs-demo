@@ -40,6 +40,9 @@ const Page = function Page() {
           <Button type="primary" block href="/lifecycle">
             这是一个生命周期示例跳转按钮
           </Button>
+          <Button type="primary" block href="/fetch">
+            这是一个网络请求示例跳转按钮
+          </Button>
         </Space>
       </section>
     </>
