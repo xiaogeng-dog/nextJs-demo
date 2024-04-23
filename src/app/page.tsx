@@ -37,6 +37,9 @@ const Page = function Page() {
           <Button type="primary" block href="/link">
             这是一个Link示例跳转按钮
           </Button>
+          <Button type="primary" block href="/lifecycle">
+            这是一个生命周期示例跳转按钮
+          </Button>
         </Space>
       </section>
     </>

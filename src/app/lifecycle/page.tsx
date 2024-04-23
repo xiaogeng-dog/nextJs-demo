@@ -5,6 +5,7 @@ import type { ReactElement } from "react";
 import Layout from "@/layout";
 import ProfileLayout from "@/layout/ProfileLayout";
 import Link from "next/link";
+import { Button } from "antd";
 
 export interface IStaticProps {
   getLayout?: (page: ReactElement) => ReactElement;
@@ -13,25 +14,25 @@ export interface IStaticProps {
 interface IProps {
   children?: ReactNode;
 }
-const Profile: FC<IProps> & IStaticProps = memo((props) => {
+const Lifecycle: FC<IProps> & IStaticProps = memo((props) => {
   return (
     <div>
-      <h2>Profile</h2>
-      {/* <Link href={"/profile/login"}>
-        <button>profiel login</button>
+      <h2>Lifecycle</h2>
+      <Link href={"/lifecycle/lifeClass"}>
+        <Button>Lifecycle Class</Button>
       </Link>
-      <Link href={"/profile/register"}>
-        <button>profiel register</button>
-      </Link> */}
+      <Link href={"/lifecycle/lifeFunction"}>
+        <Button>Lifecycle Function</Button>
+      </Link>
     </div>
   );
 });
 
-Profile.displayName = "Profile";
+Lifecycle.displayName = "Lifecycle";
 
-Profile.getLayout = (page: ReactElement) => (
+Lifecycle.getLayout = (page: ReactElement) => (
   <Layout>
     <ProfileLayout>{page}</ProfileLayout>
   </Layout>
 );
-export default Profile;
+export default Lifecycle;
